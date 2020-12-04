@@ -4,12 +4,14 @@ import 'package:assignment_track/homepage.dart';
 import 'package:flutter/material.dart';
 
 
-class splashpage extends StatefulWidget {
+// ignore: camel_case_types
+class splashPage extends StatefulWidget {
   @override
-  _splashpageState createState() => _splashpageState();
+  _splashPageState createState() => _splashPageState();
 }
 
-class _splashpageState extends State<splashpage> {
+// ignore: camel_case_types
+class _splashPageState extends State<splashPage> {
   @override
   void initState(){
     super.initState();
