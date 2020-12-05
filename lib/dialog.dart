@@ -1,7 +1,10 @@
 import 'package:assignment_track/homepage.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class joinClass extends StatelessWidget {
+
+  TextEditingController joinclasscontroller =new TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +31,7 @@ class joinClass extends StatelessWidget {
               padding:EdgeInsets.all(50),
               child:TextField(
                 // labelText : 'Code',
+                controller:joinclasscontroller ,
                 style: TextStyle(color:Colors.deepOrange,fontSize: 50),
                 cursorHeight: 35,
               ),

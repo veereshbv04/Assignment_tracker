@@ -1,6 +1,8 @@
 //import 'package:assignment_track/mybody.dart';
 
 
+import 'dart:ffi';
+
 import 'package:assignment_track/dialog.dart';
 import 'package:flutter/material.dart';
 
@@ -51,47 +53,32 @@ class _MyHomePageState extends State<MyHomePage> {
          
         ),
         //color: Colors.yellowAccent,
-        padding: EdgeInsets.all(60),
+        
+        padding: EdgeInsets.all(25),
         height: 140,
         width: double.infinity,
         //color: Colors.blueAccent,
-        child: Card(
-          child: Padding(
-            padding:EdgeInsets.all(50),
-            child: Stack(
-              children: <Widget>[
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: Stack(
-                    children: <Widget>[
-                      Padding(padding: const EdgeInsets.only(left: 10, top: 5),
-                      child:Column(children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            Padding(padding: const EdgeInsets.only(left: 15.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child:Text('Hewllo'),
-                            ),
-                            ),
-              
-                          ],
-                        ),
-                      ],)
-
-                      )
-                    ],
-                  ),
-                )
-              ],
-            ),
-            
-             ),
-          elevation: 5,
-          margin: EdgeInsets.all(10),
-          //color: Colors.indigo,
+        child:  Card(  
+    child: Column(  
+   
+      children: <Widget>[  
+        const ListTile(  
+          leading: Icon(Icons.book,size: 50),  
+          title: Text('Subject',style: TextStyle(
+            color:Colors.orange,
+            fontSize: 40,
           ),
+          
+          ),  
+          subtitle: Text('Techer'),  
+          tileColor: Colors.yellowAccent,
+          
+        ),  
+      ],  
+    ),  
+  ),
       ),
+      
 
 
       Container(
