@@ -2,9 +2,14 @@
 
 
 
-import 'package:assignment_track/dialog.dart';
+
+
+
+
+import 'package:assignment_track/attendance.dart';
+import 'package:assignment_track/joinclass.dart';
 import 'package:flutter/material.dart';
-import 'package:assignment_track/NavDrawer.dart';
+
 
 homepage(){
   return MaterialApp(
@@ -54,7 +59,15 @@ homepage(){
                 // Update the state of the app
                 // ...
                 // Then close the drawer
-                Text('item 1 is pressed');
+                
+                 BuildContext context;
+                                  Navigator.push(
+                                           context,
+                          MaterialPageRoute(builder: (context) => attendance(),
+                          )
+                      );
+               
+
               },
             ),
 

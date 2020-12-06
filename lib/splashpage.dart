@@ -13,10 +13,11 @@ class splashPage extends StatefulWidget {
 // ignore: camel_case_types
 class _splashPageState extends State<splashPage> {
   @override
+  
   void initState(){
     super.initState();
     //Timer(Duration(seconds: 3),
-    Timer(Duration(seconds :3),
+    Timer(Duration(seconds :6),
     ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => homepage() ) )
 
     );
@@ -41,7 +42,7 @@ class _splashPageState extends State<splashPage> {
           height: 200,
           decoration:BoxDecoration(
             
-            image :DecorationImage(image: NetworkImage('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQOXOcvcCNJKrUNaRqbG_whwpn9LNSqjkzP_Q&usqp=CAU') ,
+            image :DecorationImage(image: AssetImage('components\\undraw_Progress_tracking_re_ulfg.png'),
             fit: BoxFit.scaleDown),
 
           )
