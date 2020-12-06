@@ -16,7 +16,9 @@ class NavDrawer extends StatelessWidget {
                 color: Colors.green,
                 image: DecorationImage(
                     fit: BoxFit.fill,
-                    image: AssetImage("components\\undraw_studying_s3l7.svg"))),
+                    image: AssetImage("components\\undraw_studying_s3l7.svg"))
+                    
+                    ),
           ),
           ListTile(
             leading: Icon(Icons.input),

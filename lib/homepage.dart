@@ -15,18 +15,72 @@ homepage(){
           IconButton(icon: Icon(Icons.access_time), onPressed: (){ print('Access Time Button is pressed'); } )
           ],
          
-         leading: ButtonBar(
-           children: <Widget>[
-            
-             Scaffold(
-               drawer:NavDrawer(),
-             )
-           ],
-         ),
-          //leading: Icon(Icons.menu,),
+         
+          // leading:
+          
+          // leading:Icon(Icons.menu),
+          
           backgroundColor: Colors.deepOrangeAccent,
 
     ),
+    drawer: Drawer(
+        
+        child: ListView(
+          padding:EdgeInsets.zero,
+
+          children:<Widget>[
+             DrawerHeader(
+              child: Text('Menu ',style: TextStyle(
+                color:Colors.deepOrange,
+              ),),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                image: DecorationImage(
+                    fit: BoxFit.fill,
+                    image: AssetImage("components\\undraw_studying_s3l7.png")
+                    
+                    
+                    )
+                    
+                    ),
+              
+            ),
+
+             ListTile(
+              title: Text('Attendeance',style: TextStyle(
+                color:Colors.deepOrange,
+              ),),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+                Text('item 1 is pressed');
+              },
+            ),
+
+             ListTile(
+              title: Text('Help',style: TextStyle(
+                color:Colors.deepOrange,
+              ),),
+              onTap: () {
+                // Update the state of the app
+                // ...
+                // Then close the drawer
+
+                 Text('item 2 is pressed');
+               
+              },
+            ),
+
+          ],
+        ),
+
+
+    ) ,
+
+
+
+
     body: MyHomePage(),
     ),
   debugShowCheckedModeBanner: false,

@@ -47,6 +47,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
       - components\undraw_studying_s3l7.svg
+      - components\undraw_studying_s3l7.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
