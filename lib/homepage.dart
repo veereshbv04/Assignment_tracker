@@ -1,10 +1,10 @@
 //import 'package:assignment_track/mybody.dart';
 
 
-import 'dart:ffi';
 
 import 'package:assignment_track/dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:assignment_track/NavDrawer.dart';
 
 homepage(){
   return MaterialApp(
@@ -14,7 +14,16 @@ homepage(){
           actions: <Widget>[IconButton(icon: Icon(Icons.cloud_circle), onPressed: (){ print('Cloud_circle icon is pressed'); } ),
           IconButton(icon: Icon(Icons.access_time), onPressed: (){ print('Access Time Button is pressed'); } )
           ],
-          leading: Icon(Icons.menu,),
+         
+         leading: ButtonBar(
+           children: <Widget>[
+            
+             Scaffold(
+               drawer:NavDrawer(),
+             )
+           ],
+         ),
+          //leading: Icon(Icons.menu,),
           backgroundColor: Colors.deepOrangeAccent,
 
     ),
